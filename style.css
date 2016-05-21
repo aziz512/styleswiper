@@ -50,3 +50,6 @@ background:lavender;
 .jumbotron{
     background:lavender;
 }
+.btn-default:hover{
+    background-color: #f9ceea;
+}
