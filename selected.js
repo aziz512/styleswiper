@@ -1,4 +1,5 @@
 var displayImages = function(images, $selected){
+    $selected.empty();
     
     for (var number = 0; number < images.length; number = number + 1) {
         console.log(images[number]);
@@ -12,6 +13,11 @@ var displayImages = function(images, $selected){
     }
 };
 
+var transform = function(response){
+   debugger 
+}
+
 jQuery(function(){
     displayImages(images, jQuery('#selected'));
+    transform(response);
 });
