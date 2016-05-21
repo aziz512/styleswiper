@@ -4,7 +4,7 @@ var displayImages = function(images, $selected){
     for (var number = 0; number < images.length; number = number + 1) {
         var image = images[number]
         $selected.append(`
-            <div class="col-md-offset-2 col-md-8">
+            <div class="col-md-offset-2 col-md-8" style="max-width:600px">
                 <p>${image.name}</p>
                 <img class="img-responsive"  src = "${image.src}">
                 <p>${image.tags}</p>
