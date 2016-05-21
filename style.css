@@ -1,5 +1,5 @@
 body{
-  
+  background-color:#88d8b0;
 }
 
 img{
@@ -52,4 +52,7 @@ background:lavender;
 }
 .btn-default:hover{
     background-color: #f9ceea;
+}
+a.btn.btn-primary.btn-lg{
+   background-color:#ffac62; 
 }
