@@ -6,7 +6,8 @@ $( document ).ready(function() {
 
     // ? When you click the button it pushes the button text to a array.
      $('.fashiontag').click(function() {
-      if ($(this).css("background-color") != "cyan") {
+      if ($(this).data("selected") != "true") {
+       $(this).data("selected", "true");
        $(this).css("background-color", "cyan");
        console.log($(this).text() );
        userTags.push($(this).text());
@@ -14,8 +15,10 @@ $( document ).ready(function() {
       }
       else
       {
-       delete userTags[$(this).text()];
+       userTags.splice(userTags.indexOf($(this).text()), 1);
        $(this).css("background-color", "white");
+       $(this).data("selected", "false");
+       console.log(userTags);
       }
      });
         

@@ -1,5 +1,5 @@
-* {
-    border: 1px solid red;
+body{
+  
 }
 
 img{
@@ -37,4 +37,16 @@ body
 max-width:500px;
 text-align: center; 
 margin: auto;
+border:2px solid lavender;
+background:lavender;
+}
+.navbar navbar-default{
+    
+}
+.navbar-brand{
+    background:lightblue;
+    
+}
+.jumbotron{
+    background:lavender;
 }

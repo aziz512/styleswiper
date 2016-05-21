@@ -12,35 +12,49 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://bootswatch.com/readable/bootstrap.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     </head>
     <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="http://getbootstrap.com/examples/starter-template/#">Project name</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="http://getbootstrap.com/examples/starter-template/#">Home</a></li>
-            <li><a href="http://getbootstrap.com/examples/starter-template/#about">About</a></li>
-            <li><a href="http://getbootstrap.com/examples/starter-template/#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Style Swiper</a>
+			  
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#" data-toggle="modal" data-target="#myModal">About<span class="sr-only">(current)</span></a></li>
+					<li><a href="#">Learn about ScriptEd</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	<!-- ABOUT modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" id="myModalLabel">About</h4>
+		  </div>
+		  <div class="modal-body" style="text-align:center">
+			<img width="200"
+				 src="https://instagram.fsjc1-2.fna.fbcdn.net/t51.2885-15/e35/13249687_2033717946853487_117888574_n.jpg?ig_cache_key=MTI1NDk3MjkzMTE3MDU2NzA4Mg%3D%3D.2," />
+				 
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
 
     <div class="container">
         <div class="jumbotron">
-  <h1>Create Your Own Look Book</h1>
+  <h1>Create Your Own Style Book</h1>
   <p>Find inspiration for your daily look using hashtags from Instagram. Just click some hashtags below &  click submit.<br>When you're done you can share your stylebook with your friends.</p>
   <p><a class="btn btn-primary btn-lg" href="#" role="button">Find Your Looks</a></p>
   </div>
@@ -67,10 +81,6 @@
 
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
   </body>
         
 </html>
