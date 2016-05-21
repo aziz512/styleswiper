@@ -1,25 +1,39 @@
 $( document ).ready(function() {
     console.log( "ready!" );
-    // declare empty array
-
-
- var userTags = [];
- 
-
-
     
+    // ? we're defining the userTags to get input from the user. so he or she can 
     
+
+    // ? When you click the button it pushes the button text to a array.
      $('.fashiontag').click(function() {
-            console.log($(this).text() );
-// add this.text to empty array
-// console log array
-userTags.push($(this).text());
-
-console.log(userTags);
-        });
+      if ($(this).css("background-color") != "cyan") {
+       $(this).css("background-color", "cyan");
+       console.log($(this).text() );
+       userTags.push($(this).text());
+       console.log(userTags);
+      }
+      else
+      {
+       delete userTags[$(this).text()];
+       $(this).css("background-color", "white");
+      }
+     });
+        
+    // we're pushing the button.text to the array. to search instagram for the hashtags 
+    // 
     
+    var arrayLength = userTags.length;
+     for (var i = 0; i < arrayLength; i++) {
+       console.log(userTags[i]);
+    //Do something
+    }
     
-    
+    function get(name){
+     if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search))
+      {
+        return decodeURIComponent(name[1]);
+      }
+    }
     
     
     

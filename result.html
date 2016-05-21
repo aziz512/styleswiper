@@ -7,8 +7,78 @@
        <script>
            
        </script>
+  
     </head>
     <body>
+
         
+<h1 style="text-align:center">Style Swiper</h1>
+
+<div class="container">
+  <div class="img">
+      <img src="http://www.feedpuzzle.com/wp-content/uploads/2016/03/trendy-street-style-winter-outfits-14570200038plc4.jpg" alt="Trolltunga Norway" width="300" height="200">
+    <div class="caption">Trolltunga Norway</div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="img">
+    <img src="http://ell.h-cdn.co/assets/cm/15/11/5502a782e08cc_-_-march-04-river-island-store-launch-rihannas-best-outfits-v.jpg" alt="Forest" width="300" height="200">
+    <div class="caption">Forest Bridge</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="img">
+    <img src="https://s-media-cache-ak0.pinimg.com/736x/e1/f8/f0/e1f8f0db08a25066b639dbf32df35216.jpg" alt="Northern Lights" width="300" height="200">
+    <div class="caption">Northern Lights, Norway</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="img">
+    <img src="img_mountains.jpg" alt="Mountains" width="300" height="200">
+    <div class="caption">Beautiful Mountains</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">×</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+// Get all images and insert the clicked image inside the modal
+// Get the content of the image description and insert it inside the modal image caption
+var images = document.getElementsByTagName('img');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+var i;
+for (i = 0; i < images.length; i++) {
+   images[i].onclick = function(){
+       modal.style.display = "block";
+       modalImg.src = this.src;
+       modalImg.alt = this.alt;
+       captionText.innerHTML = this.nextElementSibling.innerHTML;
+   }
+}
+</script>
+
     </body>
 </html>
