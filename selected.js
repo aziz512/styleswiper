@@ -4,10 +4,10 @@ var displayImages = function(images, $selected){
     for (var number = 0; number < images.length; number = number + 1) {
         var image = images[number]
         $selected.append(`
-            <div class="col-md-offset-2 col-md-8" style="max-width:600px">
-                <p>${image.name}</p>
-                <img class="img-responsive"  src = "${image.src}">
-                <p>${image.tags}</p>
+            <div class="row col-md-offset-3 col-md-8" style="max-width:600px; margin-top:5px; margin-bottom:5px; background:#DADFE1; padding-top: 20px;padding-bottom: 20px;border-radius: 5%;">
+                <p style="word-wrap:break-word; font-size:15pt;">${image.name}</p>
+                <img class="img-responsive" style="display:inline-block;"  src = "${image.src}">
+                <p style="word-wrap:break-word;">${image.tags}</p>
             </div>
         `);
     }
