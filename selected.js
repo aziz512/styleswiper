@@ -20,13 +20,24 @@ var addResults = function(result){
      ;
 }
 
+
 var transform = function(response){
     return response.data.map(function(object){
-        return { 
-            name : object.caption.text,
+        if (object.caption) {
+            return { 
+                name : object.caption.text,
+                src : object.images.low_resolution.url,
+                tags : object.tags,
+            } 
+        }
+        else{
+            return { 
+            name : "",
             src : object.images.low_resolution.url,
             tags : object.tags,
         } 
+        }
+        
     });
 }
 
